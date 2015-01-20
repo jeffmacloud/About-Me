@@ -1,0 +1,151 @@
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+/* End of Reset */
+
+body, .jeff-macloud {
+    font-family: "Gill Sans", sans-serif;
+}
+
+/* Top Bar */
+
+h1 {
+    font-size: 3em;
+    font-weight: 500;
+}
+body {
+    background-image: #ffffff url("../images/background-paper.jpg") repeat-y fixed center;
+    background-size: 100%;
+}
+.jeff-macloud {
+    padding-left: 1em;
+    padding-top: .5em;
+    padding-bottom: 1em;
+    letter-spacing: -.5px;
+}
+
+/* Content */
+
+.blocks li {
+    text-align: center;
+    max-width: 100rem;
+    font-weight: 600;
+    font-size: 2rem;
+    color: black;
+}
+.blocks-content {
+    max-width: 91rem;
+}
+.blocks-content:first-child {
+    margin-left: 1em;
+}
+.blocks-content li {
+    height: 28.125rem;
+    width: 28.125rem;
+    display: inline;
+    float: left;
+    padding: 0.2rem 1rem;
+    margin: 2rem 1rem;
+    box-shadow: 0 0 .5rem .5rem white inset;
+    transition: background-position 0.3s;
+}
+.husband, .father, .veteran, .creative, .professional, .teacher {
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.husband {
+    background-image: url("../images/husband-flip.png");
+}
+.father {
+    background-image: url("../images/father-flip.png");
+}
+.veteran {
+    background-image: url("../images/veteran-flip.png");
+}
+.creative {
+    background-image: url("../images/creative-flip.jpg");
+}
+.professional {
+    background-image: url("../images/professional-flip.png");
+}
+.teacher {
+    background-image: url("../images/teacher-flip.png");
+}
+.blocks-content li:hover {
+    background-position: bottom center;
+}
+.footer {
+    display: block;
+    text-align: left;
+}
+.footer h3 {
+    width: 100%;
+    float: left;
+    font-size: 2em;
+}
+.contact li {
+    height: 3rem; 
+    width: 3rem;
+    display: inline;
+    float: left;
+    margin: .5rem;
+    margin-top: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 2.8rem 2.8rem;
+}
+.email {
+    background-image: url("../images/email-icon.png");
+}
+.facebook {
+    background-image: url("../images/facebook-icon.png");
+}
+.linkedin {
+    background-image: url("../images/linkedin-icon.png");
+}
+.instagram {
+    background-image: url("../images/instagram-icon.png");
+}
+.twitter {
+    background-image: url("../images/twitter-icon.png");
+}
+
