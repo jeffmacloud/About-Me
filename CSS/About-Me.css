@@ -47,14 +47,14 @@ body, .jeff-macloud {
 }
 
 /* Top Bar */
-
 h1 {
     font-size: 3em;
     font-weight: 500;
 }
 body {
-    background-image: #ffffff url("../images/background-paper.jpg") repeat-y fixed center;
     background-size: 100%;
+    background-repeat: repeat-y;
+    background-color: #d3d3d3;
 }
 .jeff-macloud {
     padding-left: 1em;
@@ -64,6 +64,7 @@ body {
 }
 
 /* Content */
+
 
 .blocks li {
     text-align: center;
@@ -78,6 +79,9 @@ body {
 .blocks-content:first-child {
     margin-left: 1em;
 }
+.father, .creative {
+    color: white;
+}
 .blocks-content li {
     height: 28.125rem;
     width: 28.125rem;
@@ -85,8 +89,10 @@ body {
     float: left;
     padding: 0.2rem 1rem;
     margin: 2rem 1rem;
-    box-shadow: 0 0 .5rem .5rem white inset;
     transition: background-position 0.3s;
+}
+.blocks-content li:hover {
+    background-position: bottom center;
 }
 .husband, .father, .veteran, .creative, .professional, .teacher {
     background-position: top center;
@@ -109,9 +115,6 @@ body {
 }
 .teacher {
     background-image: url("../images/teacher-flip.png");
-}
-.blocks-content li:hover {
-    background-position: bottom center;
 }
 .footer {
     display: block;
@@ -148,4 +151,24 @@ body {
 .twitter {
     background-image: url("../images/twitter-icon.png");
 }
-
+@media only screen and (max-width: 1000px) {
+    
+    .blocks li {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+    .footer h3 {
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+    .contact li {
+        margin: 1.25rem;
+    }
+    .contact li:first-child {
+        margin-left:3rem;
+    }
+} 
